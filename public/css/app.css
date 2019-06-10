@@ -10646,3 +10646,15 @@ a.text-dark:focus {
   }
 }
 
+.apartments-filter {
+  padding-top: 50px;
+}
+
+.apartments-filter .apartments-filter_form {
+  margin: 10px 0;
+}
+
+.apartments-filter .apartments-filter_form .filter {
+  margin: 0 10px;
+}
+
