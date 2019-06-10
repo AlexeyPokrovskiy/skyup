@@ -28,7 +28,7 @@
 
 
                     <div class="filter">
-                        <button type="submit" @click.prevent="fetch" class="btn btn-success"><i v-if="busy" class="fa fa-spin fa-spinner"></i> <span>Filter</span></button>
+                        <button type="submit" @click.prevent="fetch" class="btn btn-success d-flex"><i v-if="busy" class="fa fa-spin fa-spinner"></i><span class="filter-fetch-button">Filter</span></button>
                     </div>
                     <div class="filter">
                         <button type="submit" @click.prevent="reset" class="btn btn-danger">Reset</button>
@@ -99,7 +99,7 @@
             },
             fetch() {
                 this.busy = true;
-                axios.get('api/apartments', {
+                axios.get('/api/apartments', {
                     params: {
                         name: this.name,
                         bedrooms: this.bedrooms,

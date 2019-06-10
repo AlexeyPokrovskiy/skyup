@@ -16,6 +16,6 @@ class ApiController extends Controller
 
         $apartments = (new ApartmentFilter(Apartment::query(),$request))->apply()->get();
 
-        return $apartments;
+        return response()->json($apartments->toArray());
     }
 }

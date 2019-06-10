@@ -10658,3 +10658,7 @@ a.text-dark:focus {
   margin: 0 10px;
 }
 
+.apartments-filter .apartments-filter_form .filter-fetch-button {
+  padding: 0 10px;
+}
+

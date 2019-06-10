@@ -1793,7 +1793,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.busy = true;
-      axios.get('api/apartments', {
+      axios.get('/api/apartments', {
         params: {
           name: this.name,
           bedrooms: this.bedrooms,
@@ -37314,7 +37314,7 @@ var render = function() {
             _c(
               "button",
               {
-                staticClass: "btn btn-success",
+                staticClass: "btn btn-success d-flex",
                 attrs: { type: "submit" },
                 on: {
                   click: function($event) {
@@ -37327,8 +37327,9 @@ var render = function() {
                 _vm.busy
                   ? _c("i", { staticClass: "fa fa-spin fa-spinner" })
                   : _vm._e(),
-                _vm._v(" "),
-                _c("span", [_vm._v("Filter")])
+                _c("span", { staticClass: "filter-fetch-button" }, [
+                  _vm._v("Filter")
+                ])
               ]
             )
           ]),
